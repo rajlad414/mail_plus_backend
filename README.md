@@ -1,7 +1,6 @@
-#Laravel/PHP Project to send mail using AWS SES service
+# Laravel/PHP Project to send mail using AWS SES service
 
-####Steps to cconfig the project:
-
+#### Steps to cconfig the project:
 1. Clone your project
 2. Go to the folder application using cd command on your cmd or terminal
 3. Run composer install on your cmd or terminal
