@@ -14,5 +14,11 @@
 	MAIL_ENCRYPTION=tls<br>
 	MAIL_FROM_ADDRESS="yourmail@gmail.com"<br>
 	MAIL_FROM_NAME="${APP_NAME}" <br>
-6. Run php artisan serve in cmd
-7. Goto localhost:8000/contact
+6. Open ..app\Http\Middleware\VerifyCsrfToken.php and in the list of $ except add followings:
+    "http://localhost:8000/contactPost/",
+    "http://localhost:8000/"
+7. Open ..routes/api.php and add:
+    Route::post('/contactPost','ContactController@contactPost');
+    Route::get('/contact','ContactController@contact');
+8. Run php artisan serve in cmd
+9. Goto localhost:8000/contact
